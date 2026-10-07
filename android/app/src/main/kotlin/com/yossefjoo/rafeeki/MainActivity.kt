@@ -11,12 +11,13 @@ import android.net.ConnectivityManager
 import android.net.Uri
 import android.os.Build
 import android.os.Process
-import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 import java.util.Calendar
 
-class MainActivity : FlutterActivity() {
+// ✅ تم التعديل: MainActivity بتورث FlutterFragmentActivity عشان البصمة تشتغل
+class MainActivity : FlutterFragmentActivity() {
 
     companion object {
         private const val CHANNEL_USAGE = "rafeeqy/usage"
